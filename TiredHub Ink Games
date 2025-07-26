@@ -70,6 +70,6 @@ task.delay(1.5, function()
     subtitle.Text = "Script loaded successfully!"
     task.delay(1, function()
         fadeOutAndDestroy()
-        loadstring(game:HttpGet("https://github.com/Zodiie/Key-Scripts/blob/main/TiredHub%20Ink%20Games"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dharsa1n/Scripts/refs/heads/main/INK%20GAME"))()
     end)
 end)
