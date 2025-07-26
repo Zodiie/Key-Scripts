@@ -4,13 +4,13 @@ local player = Players.LocalPlayer
 local CoreGui = game:GetService("CoreGui")
 
 -- Destroy old GUI if re-executed
-if CoreGui:FindFirstChild("TiredHubGUI") then
-    CoreGui.TiredHubGUI:Destroy()
+if CoreGui:FindFirstChild("DangerHubGUI") then
+    CoreGui.DangerHubGUI:Destroy()
 end
 
 -- Create GUI
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "TiredHubGUI"
+screenGui.Name = "DangerHubGUI"
 screenGui.Parent = CoreGui
 screenGui.ResetOnSpawn = false
 
@@ -28,15 +28,15 @@ local stroke = Instance.new("UIStroke", mainFrame)
 stroke.Thickness = 2
 stroke.Color = Color3.fromRGB(255,0,0)
 
--- Title
+-- Title (Updated to "Tired Presents: DangerHub")
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0, 40)
 title.Position = UDim2.new(0,0,0,0)
-title.Text = "Tired Hub"
+title.Text = "Tired Presents: DangerHub"
 title.TextColor3 = Color3.new(1,1,1)
 title.BackgroundTransparency = 1
 title.Font = Enum.Font.GothamBold
-title.TextSize = 28
+title.TextSize = 24  -- Adjusted for longer text
 title.Parent = mainFrame
 
 -- Subtitle
